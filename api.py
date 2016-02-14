@@ -34,7 +34,7 @@ class Quote(Resource):
             numRows = cursor.fetchall()
 
         #Pick random row
-            i = randint(0,numRows[0][0])
+            i = randint(0,numRows[0][0]-1)
 
         #Query db for quote
             query = "SELECT * FROM quotes WHERE id=" + str(i)
