@@ -21,7 +21,7 @@ mysql.init_app(app)
 api = Api(app)
 
 class Quote(Resource):
-    def get(self):
+    def post(self):
         try:
 
         #Connect to database
